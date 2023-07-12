@@ -1,0 +1,439 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+.navegador{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-family: 'Bebas Neue', sans-serif;
+}  
+.navegador img{
+    margin: 10px;
+    height: 60px;
+}
+.navegador i{
+    display: none;
+}
+.navegador ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+.navegador ul li a{
+    display: block;
+    color: white;
+    padding: 10px 20px !important;
+    margin: 8px !important;
+    border-radius: 11px ;
+}
+.navegador ul li a:hover{
+    transition: all 1.5s;
+    background-color: rgb(105, 16, 156);
+}
+
+
+.carousel-inner {
+    width: 100%;
+    height: 80vh;
+}
+
+.carousel-inner img {
+    height: 80vh;
+}
+
+.carousel-indicators [data-bs-target] { 
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+    
+}
+
+
+.inicial{
+    padding-left: 37px !important;
+  padding-right: 37px !important;
+}
+.h1-inicio{
+    display: flex;
+    place-content: center;
+}
+.h1-inicio h1{
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    padding-top: 40px !important;
+}
+.contenedor-articulos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productos{
+    display: inline-block;
+    margin: 70px !important;
+}
+.productos p{
+    margin: 10px !important;
+}
+.productos img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.contenedor-productos{
+    width: 270px;
+    border: 2px solid black;
+    border-radius: 2px;
+    gap: 5px;
+    padding: 3px !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.agrega-carrito{
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 20px 10px !important;
+    display: flex;
+    padding: 15px !important;
+    justify-content: center;
+}
+.agrega-carrito:hover{
+    transition: all 2s;
+    opacity: 30%;
+}
+.ver-producto{
+    display: flex;
+    place-content: center;
+}
+.ver-mas-boton{
+    background-color: white;
+    cursor: pointer;
+    margin: 15px !important;
+    padding: 15px !important;
+}
+.ver-mas-boton:hover{
+    transition: all 2s;
+    opacity: 30%;
+}
+.h2-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h2-inicio h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.h2-inicio input{
+    height: 40px;
+    width: 50%;
+    border-radius: 10px;
+    margin: 15px !important;
+    text-align: center;
+}
+.h2-inicio button{  
+    background-color: white;
+    cursor: pointer;
+    margin: 20px !important;
+    padding: 10px 45px !important;
+}
+
+
+
+.contenedor-gnral-prod{
+    display: flex;
+    margin-left: 100px !important;
+}
+.contenedor-filtros{
+    width: 12%;
+    margin: 50px !important;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.contenedor-filtros h3, h2{
+    margin-top: 10px !important;
+}
+.contenedor-filtros h2{
+    color: red;
+}
+.talles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start
+}
+.colores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start
+}
+.caja-precio{
+    width: 85px;
+}
+.contenedor-productos-productos{
+    margin-left: 50px !important;
+}
+.ver-producto-producto{
+    display: flex;
+    justify-content: center;
+}
+.ver-mas-productos{
+    width: 20%;
+    background-color: white;
+    cursor: pointer;
+    margin: 15px !important;
+    padding: 20px !important;
+    margin-right: 280px !important;
+}
+.ver-mas-productos:hover{
+    transition: all 2s;
+    opacity: 30%;
+}
+.h2-producto{
+    display: grid;
+    place-content: center;
+    padding: 50px !important;
+    margin-right: 19% !important;
+}
+.h2-producto input{
+    height: 28px;
+    border-radius: 10px;
+}
+.h2-producto button{
+    max-width: 125px;
+    background-color: white;
+    cursor: pointer;
+    margin: 30px !important;
+    margin-left: 40% !important;
+    padding: 10px !important;
+}
+
+
+.contenedor-contactos{
+    display: flex;
+    margin-left: 25% !important;
+    margin-top: 60px !important;
+}
+.datos-contactos{
+    display: flex;
+    align-items: center;
+}
+.icono-contacto{
+    height: 40px;
+    width: 40px;
+}
+.input-formulario{
+    width: 100%;
+    margin-left: 200px !important;
+    display: block;
+    margin-bottom: 10px !important;
+    height: 28px;
+    border-radius: 10px;
+}
+.textarea-contacto{
+    width: 100%;
+    margin-left: 200px !important;
+    display: block;
+    margin-bottom: 10px !important;
+    height: 130px;
+    border-radius: 10px;
+}
+.formulario label{
+    font-weight: bold;
+    margin-left: 200px !important;
+}
+.formulario button{
+    background-color: white;
+    cursor: pointer;
+    margin-left: 400px !important;
+    padding: 10px !important;
+}
+
+
+
+.nosotros-1{
+    margin-top: 60px !important;
+    margin-left: 10% !important;
+    margin-bottom: 10% !important;
+    width: 80%;
+    display: flex;
+    text-align: center;
+}
+.nosotros-1 p{
+    margin-left: 10px !important;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.img-nosotros{
+    height: 550px;
+    width: 45%;
+    float: left;
+}
+
+
+
+
+.navegacion,.ubicacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px !important;
+    gap: 20px;
+}
+.navegacion li{
+    margin: 18px !important;
+}
+.navegacion ul{
+    list-style-type: none;
+}
+.navegacion a{
+    color: white
+}
+.navegacion h2{
+    font-size: 1.5rem;
+}
+.redes-sociales{
+    margin: 20px !important;
+    padding: 70px !important;
+    text-align: center;
+}
+.redes-sociales h2{
+    font-size: 1.5rem
+}
+.redes-sociales i{
+    font-size: 45px;
+    margin: 10px !important;
+    justify-items: center;
+}
+.ubicacion iframe{
+    width: 100%;
+    height: 200px;
+}
+.ubicacion h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.ubicacion p{
+    text-align: center;
+}
+
+.piePagina{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px !important;
+    column-gap: 15px;
+    align-items: center;
+    justify-items: center;
+    font-size: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+@media(max-width:1119px){
+    .piePagina{
+        grid-template-columns: 1fr 1fr;
+    }
+    .redes-sociales{
+        grid-column: 1/3;
+    }
+}
+@media(max-width:768px){
+    .piePagina{
+        grid-template-columns: 1fr;
+    }
+    .redes-sociales{
+        grid-column: auto;
+    }
+    .h2-inicio{
+        justify-content: center;
+    }
+    .img-nosotros{
+        height: 350px;
+    }
+}
+@media(max-width:950px){
+    .navegador i{
+        display: block;
+        font-size: 25px;
+        margin: 10px !important;
+        order: -1;
+    }
+    .navegador i:hover + ul{
+        left: 0px;
+    }
+    .navegador ul{
+        position: fixed;
+        top: 0;
+        left: -700px;
+        background-color: black;
+        width: 70vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 100px !important;
+        transition: 0.5s;
+        z-index: 10000;
+    }
+    .navegador ul:hover{
+        left: 0px;
+    }
+    .navegador ul li a{
+        color: white;
+        margin-top: 50px !important;
+    }
+    .carousel-inner {
+        height: 60vh;
+    }
+    .carousel-inner img {
+        height: 60vh;
+    }
+}
+@media(max-width:594px){
+    .h1-inicio h1{
+        text-align: center;
+    }
+    .img-nosotros{
+        height: 250px;
+    }
+    .carousel-inner {
+        height: 50vh;
+    }
+    .carousel-inner img {
+        height: 50vh;
+    }
+}
+@media(max-width:1400px){
+    .nosotros-1{
+        flex-direction: column;
+    }
+    .img-nosotros{
+        width: 100%;
+        margin-bottom: 40px !important;
+    }
+}
+@media(max-width:500px){
+    .carousel-inner {
+        height: 35vh;
+    }
+    .carousel-inner img {
+        height: 35vh;
+    }
+}
