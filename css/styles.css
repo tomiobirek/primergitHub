@@ -30,6 +30,7 @@ a{
     list-style: none;
     display: flex;
     justify-content: end;
+    margin-bottom: 0;
 }
 .navegador ul li a{
     display: block;
