@@ -227,46 +227,71 @@ a{
 }
 
 
-.contenedor-contactos{
-    display: flex;
-    margin-left: 25%;
-    margin-top: 60px;
+.contactos{
+    color: black;
+    line-height: 1.6;
+    padding: 0 1.5em;
+    margin: 30px 0px;
+    font-family: 'Bebas Neue', sans-serif;
 }
-.datos-contactos{
-    display: flex;
-    align-items: center;
+.formulario{
+    box-shadow: 0 0 20px 0 rgba(8, 8, 8, 0.3);
 }
-.icono-contacto{
-    height: 40px;
-    width: 40px;
+.formulario > *{
+    padding: 1em;
+    color: white;
+    word-wrap: break-word;
 }
-.input-formulario{
+.formulario-contacto{
+    background: #272323;
+}
+.formulario-contacto form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.formulario-contacto form p{
+    margin: 0;
+    padding: 1em;
+}
+.formulario-contacto form .bloque{
+    grid-column: 1/3;
+}
+.formulario-contacto form button,.formulario-contacto form input,.formulario-contacto form textarea{
     width: 100%;
-    margin-left: 200px;
-    display: block;
-    margin-bottom: 10px;
-    height: 28px;
-    border-radius: 10px;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid red;
+    color: #fff;
+    outline: 0;
 }
-.textarea-contacto{
-    width: 100%;
-    margin-left: 200px;
-    display: block;
-    margin-bottom: 10px;
-    height: 130px;
-    border-radius: 10px;
+.formulario-contacto form button{
+    background: red;
+    border: 0;
+    padding: 1em; 
 }
-.formulario label{
-    font-weight: bold;
-    margin-left: 200px;
-}
-.formulario button{
-    background-color: white;
+.formulario-contacto form button:hover,.formulario-contacto form button:focus{
+    background: #853b3b;
+    color: black;
     cursor: pointer;
-    margin-left: 400px;
-    padding: 10px;
+    transition: 1s ease-out;
+    outline: 0;
 }
-
+.info-contacto{
+    background: black;
+    order: -1;
+}
+.info-contacto ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.info-contacto ul{
+    list-style: none;
+    padding: 0;
+}
+.info-contacto ul li{
+    padding: .3em;
+}
 
 
 .nosotros-1{
@@ -436,5 +461,21 @@ a{
     }
     .carousel-inner img {
         height: 35vh;
+    }
+}
+@media(min-width: 700px){
+    .contactos{
+        padding: 0 4em;
+        margin: 50px 0px
+    }
+    .formulario{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .formulario > * {
+        padding: 2em;
+    }
+    .info-contacto ul{
+        text-align: left;
     }
 }
