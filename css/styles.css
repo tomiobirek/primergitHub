@@ -108,7 +108,7 @@ a{
     background-color: white;
     cursor: pointer;
     border: 3px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 20px 10px;
     display: flex;
     padding: 15px;
@@ -171,7 +171,7 @@ a{
     margin-top: 10px;
 }
 .contenedor-filtros h2{
-    color: red;
+    color: rgb(0, 0, 0);
 }
 .talles{
     display: flex;
@@ -263,17 +263,17 @@ a{
     padding: .7em;
     border: none;
     background: none;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid rgb(0, 0, 0);
     color: #fff;
     outline: 0;
 }
 .formulario-contacto form button{
-    background: red;
+    background: rgb(0, 0, 0);
     border: 0;
     padding: 1em; 
 }
 .formulario-contacto form button:hover,.formulario-contacto form button:focus{
-    background: #853b3b;
+    background: #3b3939;
     color: black;
     cursor: pointer;
     transition: 1s ease-out;
