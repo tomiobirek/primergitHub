@@ -1,0 +1,79 @@
+.navegacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+
+    li{
+       margin: 18px;
+   }
+
+    ul{
+       list-style-type: none;
+   }
+
+   a{
+       color: white;
+       text-decoration: none;
+   }
+
+    h2{
+       font-size: 1.5rem;
+   }
+
+   
+}
+
+.ubicacion {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+
+     iframe{
+     width: 100%;
+     height: 200px;
+ }
+      h2{
+     text-align: center;
+     font-size: 1.5rem;
+ }
+     p{
+     text-align: center;
+ }
+
+}
+
+
+.redes-sociales{
+    margin: 20px;
+    padding: 70px;
+    text-align: center;
+
+    h2{
+       font-size: 1.5rem
+   }
+
+    i{
+       font-size: 45px;
+       margin: 10px;
+       justify-items: center;
+   }
+
+}
+
+.piePagina{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    column-gap: 15px;
+    align-items: center;
+    justify-items: center;
+    font-size: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+}

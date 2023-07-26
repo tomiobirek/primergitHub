@@ -1,0 +1,40 @@
+.navegador{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-family: 'Bebas Neue', sans-serif;
+
+    img{
+        margin: 10px;
+        height: 60px;
+    }
+
+    i{
+       display: none;
+   }
+
+   ul{
+      list-style: none;
+      display: flex;
+      justify-content: end;
+      margin-bottom: 0;
+  }
+
+a{
+     display: block;
+     color: white;
+     padding: 10px 20px;
+     margin: 8px ;
+     border-radius: 11px;
+     text-decoration: none;
+
+     &:hover{
+         transition: all 1.5s;
+         color: rgb(105, 16, 156);
+     }
+ }
+
+}

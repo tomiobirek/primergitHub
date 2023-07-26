@@ -1,0 +1,34 @@
+.inicial{
+    padding-left: 37px;
+  padding-right: 37px;
+
+  .h1-inicio{
+      display: flex;
+      place-content: center;
+
+      h1{
+        font-size: 3rem;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: bold;
+        padding-top: 40px;
+    }
+  }
+
+  .contenedor-articulos{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+  }
+
+ .productos{
+    @extend %productos;
+ }
+  .contenedor-productos{
+    @extend %contenedor-productos;
+}
+ .agrega-carrito{
+    @extend %agrega-carrito;
+}
+
+}

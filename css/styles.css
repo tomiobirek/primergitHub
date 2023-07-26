@@ -1,487 +1,502 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-    width: 100%;
-}
-a{
-    text-decoration: none;
-}
-
-.navegador{
-    width: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.1rem;
-    font-family: 'Bebas Neue', sans-serif;
-}  
-.navegador img{
-    margin: 10px;
-    height: 60px;
-}
-.navegador i{
-    display: none;
-}
-.navegador ul{
-    list-style: none;
-    display: flex;
-    justify-content: end;
-    margin-bottom: 0;
-}
-.navegador ul li a{
-    display: block;
-    color: white;
-    padding: 10px 20px;
-    margin: 8px ;
-    border-radius: 11px ;
-}
-.navegador ul li a:hover{
-    transition: all 1.5s;
-    background-color: rgb(105, 16, 156);
-}
-
 
 .carousel-inner {
-    width: 100%;
-    height: 80vh;
+  width: 100%;
+  height: 80vh;
 }
-
 .carousel-inner img {
-    height: 80vh;
+  height: 80vh;
+}
+.carousel-inner .carousel-indicators [data-bs-target] {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
-.carousel-indicators [data-bs-target] { 
-    margin-right: 5px;
-    margin-left: 5px;
-    
+.navegador {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+.navegador img {
+  margin: 10px;
+  height: 60px;
+}
+.navegador i {
+  display: none;
+}
+.navegador ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 0;
+}
+.navegador a {
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px;
+  border-radius: 11px;
+  text-decoration: none;
+}
+.navegador a:hover {
+  transition: all 1.5s;
+  color: rgb(105, 16, 156);
 }
 
-
-.inicial{
-    padding-left: 37px;
+.inicial {
+  padding-left: 37px;
   padding-right: 37px;
 }
-.h1-inicio{
-    display: flex;
-    place-content: center;
+.inicial .h1-inicio {
+  display: flex;
+  place-content: center;
 }
-.h1-inicio h1{
-    font-size: 3rem;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: bold;
-    padding-top: 40px;
+.inicial .h1-inicio h1 {
+  font-size: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  padding-top: 40px;
 }
-.contenedor-articulos{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.inicial .contenedor-articulos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.productos{
-    display: inline-block;
-    margin: 70px;
+.ver-producto {
+  display: flex;
+  place-content: center;
 }
-.productos p{
-    margin: 10px;
+.ver-producto .ver-mas-boton {
+  background-color: white;
+  cursor: pointer;
+  margin: 15px;
+  padding: 15px;
 }
-.productos img{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    transition: 2.5s;
-}
-.productos img:hover{
-    transform: rotateY(360deg);
-}
-.contenedor-productos{
-    width: 270px;
-    border: 2px solid black;
-    border-radius: 2px;
-    gap: 5px;
-    padding: 3px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-}
-.agrega-carrito{
-    background-color: white;
-    cursor: pointer;
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px 10px;
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-}
-.agrega-carrito:hover{
-    transition: all 2s;
-    opacity: 30%;
-}
-.ver-producto{
-    display: flex;
-    place-content: center;
-}
-.ver-mas-boton{
-    background-color: white;
-    cursor: pointer;
-    margin: 15px;
-    padding: 15px;
-}
-.ver-mas-boton:hover{
-    transition: all 2s;
-    opacity: 30%;
-}
-.h2-inicio{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.h2-inicio h2{
-    text-align: center;
-    font-size: 1.5rem;
-}
-.h2-inicio input{
-    height: 40px;
-    width: 50%;
-    border-radius: 10px;
-    margin: 15px;
-    text-align: center;
-}
-.h2-inicio button{  
-    background-color: white;
-    cursor: pointer;
-    margin: 20px;
-    padding: 10px 45px;
+.ver-producto .ver-mas-boton:hover {
+  transition: all 2s;
+  opacity: 30%;
 }
 
-
-
-.contenedor-gnral-prod{
-    display: flex;
-    margin-left: 100px;
+.h2-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.contenedor-filtros{
-    width: 12%;
-    margin: 50px;
-    font-family: 'Bebas Neue', sans-serif;
+.h2-inicio h2 {
+  text-align: center;
+  font-size: 1.5rem;
 }
-.contenedor-filtros h3, h2{
-    margin-top: 10px;
+.h2-inicio input {
+  height: 40px;
+  width: 50%;
+  border-radius: 10px;
+  margin: 15px;
+  text-align: center;
 }
-.contenedor-filtros h2{
-    color: rgb(0, 0, 0);
-}
-.talles{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start
-}
-.colores{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start
-}
-.caja-precio{
-    width: 85px;
-}
-.contenedor-productos-productos{
-    margin-left: 50px;
-}
-.ver-producto-producto{
-    display: flex;
-    justify-content: center;
-}
-.ver-mas-productos{
-    width: 20%;
-    background-color: white;
-    cursor: pointer;
-    margin: 15px;
-    padding: 20px;
-    margin-right: 280px;
-}
-.ver-mas-productos:hover{
-    transition: all 2s;
-    opacity: 30%;
-}
-.h2-producto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 260px;
-}
-.h2-producto input{
-    height: 40px;
-    width: 50%;
-    border-radius: 10px;
-    margin: 15px;
-    text-align: center;
-}
-.h2-producto button{
-    background-color: white;
-    cursor: pointer;
-    margin: 20px;
-    padding: 10px 45px;
+.h2-inicio button {
+  background-color: white;
+  cursor: pointer;
+  margin: 20px;
+  padding: 10px 45px;
 }
 
+.contactos {
+  color: black;
+  line-height: 1.6;
+  padding: 0 1.5em;
+  margin: 30px 0px;
+  font-family: "Bebas Neue", sans-serif;
+}
+.contactos .formulario {
+  box-shadow: 0 0 20px 0 rgba(8, 8, 8, 0.3);
+}
+.contactos .formulario > * {
+  padding: 1em;
+  color: white;
+  word-wrap: break-word;
+}
+.contactos .formulario-contacto {
+  background: #272323;
+}
+.contactos .formulario-contacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contactos .formulario-contacto p {
+  margin: 0;
+  padding: 1em;
+}
+.contactos .formulario-contacto .bloque {
+  grid-column: 1/3;
+}
+.contactos .formulario-contacto .bloque button {
+  background: rgb(0, 0, 0);
+  border: 0;
+  padding: 1em;
+}
+.contactos .formulario-contacto .bloque button:hover {
+  background: #3b3939;
+  color: black;
+  cursor: pointer;
+  transition: 1s ease-out;
+  outline: 0;
+}
+.contactos .formulario-contacto .bloque button:focus {
+  background: #3b3939;
+  color: black;
+  cursor: pointer;
+  transition: 1s ease-out;
+  outline: 0;
+}
+.contactos .formulario-contacto form button, .contactos .formulario-contacto form input, .contactos .formulario-contacto form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  color: #fff;
+  outline: 0;
+}
+.contactos .info-contacto {
+  background: black;
+  order: -1;
+}
+.contactos .info-contacto ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  list-style: none;
+  padding: 0;
+}
+.contactos .info-contacto li {
+  padding: 0.3em;
+}
 
-.contactos{
-    color: black;
-    line-height: 1.6;
-    padding: 0 1.5em;
-    margin: 30px 0px;
-    font-family: 'Bebas Neue', sans-serif;
+.nosotros-1 {
+  margin-top: 60px;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  width: 80%;
+  display: flex;
+  text-align: center;
 }
-.formulario{
-    box-shadow: 0 0 20px 0 rgba(8, 8, 8, 0.3);
+.nosotros-1 p {
+  margin-left: 10px;
+  font-family: "Bebas Neue", sans-serif;
 }
-.formulario > *{
-    padding: 1em;
-    color: white;
-    word-wrap: break-word;
+
+.img-nosotros {
+  height: 550px;
+  width: 45%;
+  float: left;
+  border-radius: 5px;
 }
-.formulario-contacto{
-    background: #272323;
+
+.navegacion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
 }
-.formulario-contacto form{
-    display: grid;
+.navegacion li {
+  margin: 18px;
+}
+.navegacion ul {
+  list-style-type: none;
+}
+.navegacion a {
+  color: white;
+  text-decoration: none;
+}
+.navegacion h2 {
+  font-size: 1.5rem;
+}
+
+.ubicacion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+}
+.ubicacion iframe {
+  width: 100%;
+  height: 200px;
+}
+.ubicacion h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.ubicacion p {
+  text-align: center;
+}
+
+.redes-sociales {
+  margin: 20px;
+  padding: 70px;
+  text-align: center;
+}
+.redes-sociales h2 {
+  font-size: 1.5rem;
+}
+.redes-sociales i {
+  font-size: 45px;
+  margin: 10px;
+  justify-items: center;
+}
+
+.piePagina {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  column-gap: 15px;
+  align-items: center;
+  justify-items: center;
+  font-size: 1rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media (max-width: 1119px) {
+  .piePagina {
     grid-template-columns: 1fr 1fr;
-}
-.formulario-contacto form p{
-    margin: 0;
-    padding: 1em;
-}
-.formulario-contacto form .bloque{
+  }
+  .redes-sociales {
     grid-column: 1/3;
+  }
 }
-.formulario-contacto form button,.formulario-contacto form input,.formulario-contacto form textarea{
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    color: #fff;
-    outline: 0;
+@media (max-width: 768px) {
+  .piePagina {
+    grid-template-columns: 1fr;
+  }
+  .redes-sociales {
+    grid-column: auto;
+  }
+  .h2-inicio {
+    justify-content: center;
+  }
+  .img-nosotros {
+    height: 350px;
+  }
 }
-.formulario-contacto form button{
-    background: rgb(0, 0, 0);
-    border: 0;
-    padding: 1em; 
-}
-.formulario-contacto form button:hover,.formulario-contacto form button:focus{
-    background: #3b3939;
-    color: black;
-    cursor: pointer;
-    transition: 1s ease-out;
-    outline: 0;
-}
-.info-contacto{
-    background: black;
-    order: -1;
-}
-.info-contacto ul{
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-.info-contacto ul{
-    list-style: none;
-    padding: 0;
-}
-.info-contacto ul li{
-    padding: .3em;
-}
-
-
-.nosotros-1{
-    margin-top: 60px;
-    margin-left: 10%;
-    margin-bottom: 10%;
-    width: 80%;
-    display: flex;
-    text-align: center;
-}
-.nosotros-1 p{
-    margin-left: 10px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-.img-nosotros{
-    height: 550px;
-    width: 45%;
-    float: left;
-}
-
-
-
-
-.navegacion,.ubicacion{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    gap: 20px;
-}
-.navegacion li{
-    margin: 18px;
-}
-.navegacion ul{
-    list-style-type: none;
-}
-.navegacion a{
-    color: white
-}
-.navegacion h2{
-    font-size: 1.5rem;
-}
-.redes-sociales{
-    margin: 20px;
-    padding: 70px;
-    text-align: center;
-}
-.redes-sociales h2{
-    font-size: 1.5rem
-}
-.redes-sociales i{
-    font-size: 45px;
+@media (max-width: 950px) {
+  .navegador i {
+    display: block;
+    font-size: 25px;
     margin: 10px;
-    justify-items: center;
-}
-.ubicacion iframe{
-    width: 100%;
-    height: 200px;
-}
-.ubicacion h2{
-    text-align: center;
-    font-size: 1.5rem;
-}
-.ubicacion p{
-    text-align: center;
-}
-
-.piePagina{
+    order: -1;
+  }
+  .navegador i:hover + ul {
+    left: 0px;
+  }
+  .navegador ul {
+    position: fixed;
+    top: 0;
+    left: -700px;
     background-color: black;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px;
-    column-gap: 15px;
+    width: 70vw;
+    height: 100vh;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    font-size: 1rem;
-    font-family: 'Bebas Neue', sans-serif;
+    justify-content: start;
+    padding-top: 100px;
+    transition: 0.5s;
+    z-index: 10000;
+  }
+  .navegador ul:hover {
+    left: 0px;
+  }
+  .navegador a {
+    color: white;
+    margin-top: 50px;
+  }
+  .carousel-inner {
+    height: 60vh;
+  }
+  .carousel-inner img {
+    height: 60vh;
+  }
+}
+@media (max-width: 594px) {
+  .h1-inicio h1 {
+    text-align: center;
+  }
+  .img-nosotros {
+    height: 250px;
+  }
+  .carousel-inner {
+    height: 50vh;
+  }
+  .carousel-inner img {
+    height: 50vh;
+  }
+}
+@media (max-width: 1400px) {
+  .nosotros-1 {
+    flex-direction: column;
+  }
+  .img-nosotros {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-inner {
+    height: 35vh;
+  }
+  .carousel-inner img {
+    height: 35vh;
+  }
+}
+@media (min-width: 700px) {
+  .contactos {
+    padding: 0 4em;
+    margin: 50px 0px;
+  }
+  .formulario {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .formulario > * {
+    padding: 2em;
+  }
+  .info-contacto ul {
+    text-align: left;
+  }
+}
+.categorias {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-@media(max-width:1119px){
-    .piePagina{
-        grid-template-columns: 1fr 1fr;
-    }
-    .redes-sociales{
-        grid-column: 1/3;
-    }
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
-@media(max-width:768px){
-    .piePagina{
-        grid-template-columns: 1fr;
-    }
-    .redes-sociales{
-        grid-column: auto;
-    }
-    .h2-inicio{
-        justify-content: center;
-    }
-    .img-nosotros{
-        height: 350px;
-    }
+.contenedor .tarjeta {
+  width: 300px;
+  height: 300px;
+  margin: 17px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
-@media(max-width:950px){
-    .navegador i{
-        display: block;
-        font-size: 25px;
-        margin: 10px;
-        order: -1;
-    }
-    .navegador i:hover + ul{
-        left: 0px;
-    }
-    .navegador ul{
-        position: fixed;
-        top: 0;
-        left: -700px;
-        background-color: black;
-        width: 70vw;
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        padding-top: 100px;
-        transition: 0.5s;
-        z-index: 10000;
-    }
-    .navegador ul:hover{
-        left: 0px;
-    }
-    .navegador ul li a{
-        color: white;
-        margin-top: 50px;
-    }
-    .carousel-inner {
-        height: 60vh;
-    }
-    .carousel-inner img {
-        height: 60vh;
-    }
+.contenedor .tarjeta img {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 1.5s;
 }
-@media(max-width:594px){
-    .h1-inicio h1{
-        text-align: center;
-    }
-    .img-nosotros{
-        height: 250px;
-    }
-    .carousel-inner {
-        height: 50vh;
-    }
-    .carousel-inner img {
-        height: 50vh;
-    }
+.contenedor .tarjeta img:hover {
+  transform: translate(10px, 10px);
 }
-@media(max-width:1400px){
-    .nosotros-1{
-        flex-direction: column;
-    }
-    .img-nosotros{
-        width: 100%;
-        margin-bottom: 40px;
-    }
+.contenedor .tarjeta h2 {
+  font-family: "Bebas Neue", sans-serif;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
-@media(max-width:500px){
-    .carousel-inner {
-        height: 35vh;
-    }
-    .carousel-inner img {
-        height: 35vh;
-    }
+
+.contenedor-productos-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-@media(min-width: 700px){
-    .contactos{
-        padding: 0 4em;
-        margin: 50px 0px
-    }
-    .formulario{
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-    }
-    .formulario > * {
-        padding: 2em;
-    }
-    .info-contacto ul{
-        text-align: left;
-    }
+.h2-producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+.h2-producto input {
+  height: 40px;
+  width: 50%;
+  border-radius: 10px;
+  margin: 15px;
+  text-align: center;
+}
+.h2-producto button {
+  background-color: white;
+  cursor: pointer;
+  margin: 20px;
+  padding: 10px 45px;
+}
+
+.inicial .contenedor-productos, .contenedor-productos-productos .contenedor-productos {
+  width: 270px;
+  border: 2px solid black;
+  border-radius: 2px;
+  gap: 5px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.inicial .productos, .contenedor-productos-productos .productos {
+  display: inline-block;
+  margin: 70px;
+}
+.inicial .productos p, .contenedor-productos-productos .productos p {
+  margin: 10px;
+}
+.inicial .productos img, .contenedor-productos-productos .productos img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 2.5s;
+}
+.inicial .productos img:hover, .contenedor-productos-productos .productos img:hover {
+  transform: rotateY(360deg);
+}
+
+.inicial .agrega-carrito, .contenedor-productos-productos .agrega-carrito {
+  background-color: white;
+  cursor: pointer;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 20px 10px;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+.inicial .agrega-carrito:hover, .contenedor-productos-productos .agrega-carrito:hover {
+  transition: all 2s;
+  opacity: 30%;
+}
+
+header {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

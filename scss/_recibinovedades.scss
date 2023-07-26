@@ -1,0 +1,26 @@
+.h2-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+     input{
+        height: 40px;
+        width: 50%;
+        border-radius: 10px;
+        margin: 15px;
+        text-align: center;
+    }
+
+     button{  
+        background-color: white;
+        cursor: pointer;
+        margin: 20px;
+        padding: 10px 45px;
+    }
+}
