@@ -1,6 +1,5 @@
 %contenedor-productos{
     width: 270px;
-    border: 2px solid black;
     border-radius: 2px;
     gap: 5px;
     padding: 3px;
@@ -8,6 +7,8 @@
     flex-direction: column;
     text-align: center;
     font-family: $fuente;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);;
 }
 %productos{
     display: inline-block;
@@ -32,8 +33,8 @@
 %agrega-carrito{
     background-color: white;
     cursor: pointer;
-    border: 3px solid black;
-    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
     margin: 20px 10px;
     display: flex;
     padding: 15px;
