@@ -1,0 +1,6 @@
+@mixin boton ($bg, $mrg){
+    background-color: $bg;
+        cursor: pointer;
+        margin: $mrg;
+        padding: 10px 45px;
+}

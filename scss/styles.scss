@@ -1,5 +1,7 @@
 @import "reset";
 @import "variables";
+@import "mixins";
+@import "general";
 @import "carrousel";
 @import "navegacion";
 @import "inicio";
@@ -13,12 +15,7 @@
 @import "extend";
 
 
-header{
-    width: 100%;
-}
-a{
-    text-decoration: none;
-}
+
 
 
 
