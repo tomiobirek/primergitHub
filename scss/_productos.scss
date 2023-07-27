@@ -2,7 +2,7 @@
     text-align: center;
     margin-top: 30px;
     font-size: 2rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: $fuente;
 }
 .contenedor{
     display: flex;
@@ -32,7 +32,7 @@
     }
            }
          h2 {
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: $fuente;
         cursor: pointer;
         color: white;
         position: absolute;
