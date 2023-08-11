@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+.todo {
+  background-color: #f9f9f9;
+}
+
 .carousel-inner {
   width: 100%;
   height: 80vh;
